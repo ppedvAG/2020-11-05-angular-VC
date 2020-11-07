@@ -1,0 +1,10 @@
+<h3>TIME COMPONENT</h3>
+
+<p>Klassen Props in Template verwenden</p>
+
+<p>Aktuelle Zeit: {{timestring}}</p>
+
+<button mat-button (click)=stopTimer()>stop timer</button>
+<button mat-button (click)=ngOnInit() [disabled]=timeRunning>start timer again</button>
+
+<button [disabled]=giveTrue()>test</button>

@@ -1,0 +1,15 @@
+<h3>TODOSLIST</h3>
+
+<form action="" ngForm>
+<!-- <input ngModel #myInput="ngModel" type="text"> -->
+<input [(ngModel)]=etwas type="text" [ngModelOptions]="{standalone: true}">
+
+  <!-- <input type="text" [(value)]=etwas> -->
+</form>
+<p>{{etwas}}</p>
+
+<ul>
+  <app-todo *ngFor="let td of todos" [oneTodo]=td>
+
+  </app-todo>
+</ul>
